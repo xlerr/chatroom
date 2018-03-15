@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y scroll-top='1000000000' class='msgs'>
+    <text wx:for="{{msgs}}" class="{{item.isMe?'fr':'fl'}} msg-item">{{item.msg}}</text>
+  </scroll-view>
+  <view class='box'>
+    <form bindsubmit="sendMsg">
+      <view class='input-box'>
+        <input type='text' name='msg' class="input" placeholder="请输入消息"></input>
+      </view>
+      <button formType="submit" class='submit'>发送</button>
+    </form>
+  </view>
+</view>

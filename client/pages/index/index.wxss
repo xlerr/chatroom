@@ -1,0 +1,44 @@
+/**index.wxss**/
+page { width: 100%; height: 100%;}
+.container { position: relative; width: 700rpx; margin:0 auto; padding: 0;}
+
+.fl { float: left}
+.fr { float: right}
+
+.msgs {
+  position: absolute;
+  bottom: 280rpx;
+  width: 100%;
+  height: 75%;
+  padding: 0rpx; 
+  /* border: 1rpx solid #ccc;  */
+  /* border-radius: 10rpx; */
+}
+
+.msg-item {
+  clear: both;
+  display: block;
+  margin: 10rpx;
+  line-height: 50rpx;
+  padding: 15rpx 50rpx;
+  border-radius: 40rpx;
+  border: 1px solid #aaa;
+}
+
+.box {
+  position: absolute;
+  bottom: 25rpx;
+  width: 100%;
+}
+
+.input-box {
+  background-color: #ccc;
+  padding: 1rpx;
+  border-radius: 10rpx;
+}
+
+.input-box .input { padding: 25rpx; background-color: #fff; border-radius: 10rpx;}
+
+.submit { margin-top: 25rpx; border-radius: 10rpx}
+
+/* .input { height: 50rpx; line-height: 50rpx; padding: 25rpx; background-color: #fff; width: 648rpx;} */
