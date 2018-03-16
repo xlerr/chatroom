@@ -1,9 +1,6 @@
 //app.js
 
 App({
-  id: null,
-  onLaunch: function () {
-  },
-  globalData: {
-  }
-})
+  globalData: {},
+  onLaunch: function () {},
+});

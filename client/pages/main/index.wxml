@@ -1,7 +1,7 @@
 <!--index.wxml-->
-<view class="container">
-  <scroll-view scroll-y scroll-top='1000000000' class='msgs'>
-    <text wx:for="{{msgs}}" class="{{item.isMe?'fr':'fl'}} msg-item">{{item.msg}}</text>
+<view class="container {{id}}">
+  <scroll-view scroll-y scroll-top='{{scrollTop}}' class='msgs'>
+     <text wx:for="{{msgs}}" wx:key="index" wx:value="item" class="{{item.id===id?'fr':'fl'}} msg-item">{{item.msg}}</text> 
   </scroll-view>
   <view class='box'>
     <form bindsubmit="sendMsg">
